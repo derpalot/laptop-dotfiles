@@ -1,0 +1,7 @@
+
+xmonad.hs:227:25: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+    |
+227 | myLayout = avoidStruts (spacing 20 $ Tall 1 (3/100) (1/2)) 
+    |                         ^^^^^^^
