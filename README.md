@@ -1,7 +1,7 @@
 # laptop dotfiles
 <img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot1.jpg" alt="Screenshot One" />
-<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot3.jpg" alt="Screenshot Three" />
-<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot2.jpg" alt="Screenshot Two" />
+<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot2.jpg" alt="Screenshot Three" />
+<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot3.jpg" alt="Screenshot Two" />
 <dl>
   <dd>OS: Arch Linux</dd>
   <dd>Window Manager: <a href="https://github.com/xmonad/xmonad">Xmonad</a></dd>
