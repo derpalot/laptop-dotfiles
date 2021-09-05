@@ -1,15 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+(cat $HOME/.config/wpg/sequences &)
 # Path to your oh-my-zsh installation.
 export ZSH="/home/adrian/.oh-my-zsh"
 
 export TYPEWRITTEN_COLOR_MAPPINGS="primary:red;secondary:red;accent:grey;foreground:grey"
 
-export PATH=$HOME/scripts:$PATH
-export PATH=$HOME/.config/rofi/bin:$PATH
-path+=('~/.emacs.d')
-export PATH
+export PATH="$HOME/.emacs.d/bin:$PATH"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -80,7 +78,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-neofetch --off
+# neofetch --off
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -107,3 +105,7 @@ neofetch --off
 # alias zshconfig="mate ~/.zshrc"
 alias bm="bashmount"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/adrian/.sdkman"
+[[ -s "/home/adrian/.sdkman/bin/sdkman-init.sh" ]] && source "/home/adrian/.sdkman/bin/sdkman-init.sh"

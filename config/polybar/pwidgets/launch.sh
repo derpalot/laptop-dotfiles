@@ -13,7 +13,7 @@ kill_bar() {
 ## Main
 if [[ "$1" == "--main" ]]; then
 	kill_bar
-	polybar -q primary -c $DIR/main.ini &
+        polybar -q primary -c $DIR/main.ini &
 	polybar -q secondary -c $DIR/main.ini &
 	polybar -q top -c $DIR/main.ini &
 

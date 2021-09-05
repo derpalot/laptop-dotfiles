@@ -1,9 +1,9 @@
-* { 
-   background:                     #263238;
-   background-alt:                 #37474F;
-   foreground:                     #FEFFF1ff;
-   border:                                     #3A6081ff;
-   border-alt:                         #715979ff;
-   selected:                           #607d8b;
-   urgent:                         #DA4453FF;
+* {
+   background:                     #e1cec4;
+   background-alt:                 #e1cec4;
+   foreground:                     #1f0f11;
+   border:                         #e1cec4;
+   border-alt:                     #e1cec4;
+   selected:                       #7294A0;
+   urgent:                         #e1cec4;
 }

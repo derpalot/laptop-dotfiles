@@ -1,11 +1,11 @@
 # laptop dotfiles
-<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/backgrounds/screenshot.png" alt="Screenshot One" />
-<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/backgrounds/screenshot2.png" alt="Screenshot Three" />
-<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/backgrounds/screenshot1.png" alt="Screenshot Two" />
+<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot1.jpg" alt="Screenshot One" />
+<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot3.jpg" alt="Screenshot Three" />
+<img src="https://github.com/derpalot/laptop-dotfiles/blob/main/screenshots/screenshot2.jpg" alt="Screenshot Two" />
 <dl>
   <dd>OS: Arch Linux</dd>
   <dd>Window Manager: <a href="https://github.com/xmonad/xmonad">Xmonad</a></dd>
-  <dd>Status bar: <a href= "https://polybar.github.io/">Polybar</a> with <a href="https://github.com/adi1090x/polybar-themes">adi1090x themes</a></dd>
+  <dd>Status bar: <a href= "https://polybar.github.io/">Polybar</a> with pwidgets <a href="https://github.com/adi1090x/polybar-themes">adi1090x themes</a></dd>
   <dd> Application launcher: <a href= "https://github.com/davatorium/rofi">Rofi</a> with <a href="https://github.com/adi1090x/rofi">adi1090x themes</a></dd>
   <dd>Terminal: <a href="https://github.com/alacritty/alacritty">Alacritty</a> with <a href="https://github.com/reobin/typewritten">Typewritten</a></dd>
   <dd>Font: <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a></dd>

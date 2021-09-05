@@ -11,10 +11,13 @@ import XMonad
 import XMonad.Layout.Spacing
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.EwmhDesktops
+import XMonad.Actions.Minimize
+import XMonad.Layout.Minimize
 
 import Data.Monoid
 import System.Exit
 import XMonad.Util.SpawnOnce
+import qualified XMonad.Layout.BoringWindows as BW
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
@@ -51,8 +54,8 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["1","2","3","4","5", "6"]
-
+myWorkspaces    = ["1","2","3","4","5"]
+;
 -- Border colors for unfocused and focused windows, respectively.
 --
 myNormalBorderColor  = "#dddddd"
@@ -85,16 +88,25 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     ,((0                , 0x1008FF12 ), spawn "pamixer -t")
     
     -- lower screen brightness
-    ,((0                , 0x1008FF03 ), spawn "brightnessctl -d 'intel_backlight' s 5%-")
+    ,((0                , 0x1008FF03 ), spawn "brightnessctl -d 'intel_backlight' s 4%-")
 
     -- higher screen brightness
-    ,((0                , 0x1008FF02 ), spawn "brightnessctl -d 'intel_backlight' s +5%")
+    ,((0                , 0x1008FF02 ), spawn "brightnessctl -d 'intel_backlight' s +4%")
 
     -- lower keyboard brightness
-    ,((0                , 0x1008FF06 ), spawn "brightnessctl -d 'smc::kbd_backlight' s 5%-")
+    ,((0                , 0x1008FF06 ), spawn "brightnessctl -d 'smc::kbd_backlight' s 4%-")
 
     -- higher keyboard brightness
-    ,((0                , 0x1008FF05 ), spawn "brightnessctl -d 'smc::kbd_backlight' s +5%")
+    ,((0                , 0x1008FF05 ), spawn "brightnessctl -d 'smc::kbd_backlight' s +4%")
+
+    -- minimize focused window
+    ,((modm .|. shiftMask,  xK_m     ), withFocused minimizeWindow)
+
+    -- minimize focused window
+    ,((modm,                xK_m     ), withLastMinimized maximizeWindow)
+
+    -- launch doom emacs
+    ,((modm .|. shiftMask,  xK_d     ), spawn "emacs")
 
     -- launch rofi -launcher
     , ((modm,               xK_p     ), spawn "zsh ~/.config/rofi/launchers/text/launcher.sh") 
@@ -131,9 +143,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Move focus to the previous window
     , ((modm,               xK_k     ), windows W.focusUp  )
-
-    -- Move focus to the master window
-    , ((modm,               xK_m     ), windows W.focusMaster  )
 
     -- Swap the focused window and the master window
     , ((modm,               xK_Return), windows W.swapMaster)
@@ -224,8 +233,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 
-myLayout = avoidStruts (spacing 20 $ Tall 1 (3/100) (1/2)) 
-
+myLayout = minimize .BW.boringWindows $ avoidStruts (spacing 20 $ Tall 1 (1/100) (1/2)) 
 
 -- myLayout = tiled ||| Mirror tiled ||| Full
   -- where
@@ -271,7 +279,7 @@ myManageHook = composeAll
 -- return (All True) if the default handler is to be run afterwards. To
 -- combine event hooks use mappend or mconcat from Data.Monoid.
 --
-myEventHook = mempty
+myEventHook = handleEventHook def <+> fullscreenEventHook
 
 ------------------------------------------------------------------------
 -- Status bars and logging
@@ -290,20 +298,20 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-                    spawnOnce "xrandr --output eDP1 --mode 1920x1200"
-                    spawnOnce "nitrogen --restore &"
                     spawnOnce "picom --experimental-backends -b &"
-                    spawnOnce "zsh ~/.config/polybar/launch.sh --shapes &"
                     spawnOnce "setxkbmap -option 'caps:ctrl_modifier' &"
                     spawnOnce "xsetroot -cursor_name left_ptr &" 
-                    spawnOnce "macbook-lighter-screen -M &" 
-                    spawnOnce "redshift" 
+                    spawnOnce "brightnessctl  -d 'intel_backlight' s 100% &" 
+		    spawnOnce "xrandr --output eDP1 --mode 1920x1200"
+                    spawnOnce "zsh ~/.config/wpg/wp_init.sh &"
+                    spawnOnce "zsh ~/.config/polybar/launch.sh --pwidgets &"
+		    spawnOnce "systemctl --user restart libinput-gestures.service"
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
-main = xmonad $ docks $ ewmh defaults{ handleEventHook = handleEventHook def <+> fullscreenEventHook }
+main = xmonad $ docks $ ewmh defaults
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
