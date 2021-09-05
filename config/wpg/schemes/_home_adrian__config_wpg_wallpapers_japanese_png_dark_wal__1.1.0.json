@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/japanese.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b0a0a",
+        "foreground": "#e9e6e0",
+        "cursor": "#e9e6e0"
+    },
+    "colors": {
+        "color0": "#0b0a0a",
+        "color1": "#6D645E",
+        "color2": "#A15B46",
+        "color3": "#7A887F",
+        "color4": "#AB8F74",
+        "color5": "#A5A194",
+        "color6": "#D4BBA7",
+        "color7": "#e9e6e0",
+        "color8": "#a3a19c",
+        "color9": "#6D645E",
+        "color10": "#A15B46",
+        "color11": "#7A887F",
+        "color12": "#AB8F74",
+        "color13": "#A5A194",
+        "color14": "#D4BBA7",
+        "color15": "#e9e6e0"
+    }
+}

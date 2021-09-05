@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/autumnleaves.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#071011",
+        "foreground": "#9cb3ba",
+        "cursor": "#9cb3ba"
+    },
+    "colors": {
+        "color0": "#071011",
+        "color1": "#59645E",
+        "color2": "#A25616",
+        "color3": "#925B2F",
+        "color4": "#D7630A",
+        "color5": "#D0914B",
+        "color6": "#1F708E",
+        "color7": "#9cb3ba",
+        "color8": "#6d7d82",
+        "color9": "#59645E",
+        "color10": "#A25616",
+        "color11": "#925B2F",
+        "color12": "#D7630A",
+        "color13": "#D0914B",
+        "color14": "#1F708E",
+        "color15": "#9cb3ba"
+    }
+}

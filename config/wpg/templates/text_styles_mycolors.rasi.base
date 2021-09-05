@@ -1,0 +1,9 @@
+/* colors */
+
+* {{
+al:      {color4};
+bg:      {color7};
+se:      {color7};
+fg:      {color6};
+ac:      {color2};
+}}

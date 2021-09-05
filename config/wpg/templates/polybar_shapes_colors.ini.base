@@ -1,0 +1,28 @@
+;; ┌────────────────────────────────────────────────────────────┐
+;; │░█▀█░█▀█░█░░░█░█░█▀▄░█▀█░█▀▄░░░░░░░░░█▀▀░█▀█░█░░░█▀█░█▀▄░█▀▀│
+;; │░█▀▀░█░█░█░░░░█░░█▀▄░█▀█░█▀▄░░░░▀░░░░█░░░█░█░█░░░█░█░█▀▄░▀▀█│
+;; │░▀░░░▀▀▀░▀▀▀░░▀░░▀▀░░▀░▀░▀░▀░░░░▀░░░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀│
+;; │░Created░By░Aditya░Shakya░@adi1090x░░░░░░░░░░░░░░░░░░░░░░░░░│
+;; └────────────────────────────────────────────────────────────┘
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[color]
+
+;; Use pywal.sh in scripts directory to use colors from an image/wallpaper.
+
+;; main colors
+background = ${{xrdb:color1:{color1}}}
+foreground = ${{xrdb:color0:{color0}}}
+foreground-alt = #FFFFFF
+
+;; shades
+shade1 = ${{xrdb:color1:{color1}}}
+shade2 = ${{xrdb:color2:{color2}}}
+shade3 = ${{xrdb:color3:{color3}}}
+shade4 = ${{xrdb:color4:{color4}}}
+shade5 = ${{xrdb:color5:{color5}}}
+shade6 = ${{xrdb:color6:{color6}}}
+shade7 = ${{xrdb:color7:{color7}}}
+shade8 = ${{xrdb:color8:{color8}}}
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-a98c7c_

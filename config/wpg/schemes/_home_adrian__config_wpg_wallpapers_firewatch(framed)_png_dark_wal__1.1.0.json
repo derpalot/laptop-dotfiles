@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/firewatch(framed).png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#293739",
+        "foreground": "#e5e8e3",
+        "cursor": "#e5e8e3"
+    },
+    "colors": {
+        "color0": "#293739",
+        "color1": "#91B1AE",
+        "color2": "#AFC1BF",
+        "color3": "#CFCDB2",
+        "color4": "#E4DEBE",
+        "color5": "#B4CAC5",
+        "color6": "#CED7D6",
+        "color7": "#e5e8e3",
+        "color8": "#a0a29e",
+        "color9": "#91B1AE",
+        "color10": "#AFC1BF",
+        "color11": "#CFCDB2",
+        "color12": "#E4DEBE",
+        "color13": "#B4CAC5",
+        "color14": "#CED7D6",
+        "color15": "#e5e8e3"
+    }
+}

@@ -1,0 +1,1 @@
+/home/adrian/.doom.d/themes/wpgtk-theme.el

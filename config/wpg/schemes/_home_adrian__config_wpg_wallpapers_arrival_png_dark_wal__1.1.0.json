@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/arrival.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#201213",
+        "foreground": "#d0dbe0",
+        "cursor": "#d0dbe0"
+    },
+    "colors": {
+        "color0": "#201213",
+        "color1": "#4B6C93",
+        "color2": "#917D97",
+        "color3": "#6A90AA",
+        "color4": "#7BACC3",
+        "color5": "#A8B0B2",
+        "color6": "#F5D4A3",
+        "color7": "#d0dbe0",
+        "color8": "#91999c",
+        "color9": "#4B6C93",
+        "color10": "#917D97",
+        "color11": "#6A90AA",
+        "color12": "#7BACC3",
+        "color13": "#A8B0B2",
+        "color14": "#F5D4A3",
+        "color15": "#d0dbe0"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/queenGambit.jpeg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0B1114",
+        "foreground": "#e6e2de",
+        "cursor": "#e6e2de"
+    },
+    "colors": {
+        "color0": "#0B1114",
+        "color1": "#9E8977",
+        "color2": "#C19F7D",
+        "color3": "#788286",
+        "color4": "#AD9E93",
+        "color5": "#C7B5A4",
+        "color6": "#D2C6B5",
+        "color7": "#e6e2de",
+        "color8": "#a19e9b",
+        "color9": "#9E8977",
+        "color10": "#C19F7D",
+        "color11": "#788286",
+        "color12": "#AD9E93",
+        "color13": "#C7B5A4",
+        "color14": "#D2C6B5",
+        "color15": "#e6e2de"
+    }
+}

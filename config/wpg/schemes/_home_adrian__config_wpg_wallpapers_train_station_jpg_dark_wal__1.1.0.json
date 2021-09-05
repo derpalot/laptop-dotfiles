@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/train_station.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#131313",
+        "foreground": "#f2eede",
+        "cursor": "#f2eede"
+    },
+    "colors": {
+        "color0": "#131313",
+        "color1": "#A08E6F",
+        "color2": "#DDB956",
+        "color3": "#637595",
+        "color4": "#AFA38E",
+        "color5": "#C9B79C",
+        "color6": "#EDD9A7",
+        "color7": "#f2eede",
+        "color8": "#a9a69b",
+        "color9": "#A08E6F",
+        "color10": "#DDB956",
+        "color11": "#637595",
+        "color12": "#AFA38E",
+        "color13": "#C9B79C",
+        "color14": "#EDD9A7",
+        "color15": "#f2eede"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/adrian/.config/wpg/wallpapers/snowy.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#060B1A",
+        "foreground": "#eac8b1",
+        "cursor": "#eac8b1"
+    },
+    "colors": {
+        "color0": "#060B1A",
+        "color1": "#1E3E63",
+        "color2": "#273E61",
+        "color3": "#27415E",
+        "color4": "#1F4163",
+        "color5": "#355279",
+        "color6": "#C46220",
+        "color7": "#eac8b1",
+        "color8": "#a38c7b",
+        "color9": "#1E3E63",
+        "color10": "#273E61",
+        "color11": "#27415E",
+        "color12": "#1F4163",
+        "color13": "#355279",
+        "color14": "#C46220",
+        "color15": "#eac8b1"
+    }
+}
