@@ -14,9 +14,9 @@
   <dd>File Manager: <a href="https://github.com/ranger/ranger">Ranger</a></d>
   <dd>Music Player: <a href="https://github.com/Spotifyd/spotifyd">Spotifyd</a> with <a href="https://github.com/Rigellute/spotify-tui">Spotify-tui</a></dd>
   <dd>Editor: <a href="https://github.com/neovim/neovim">Neovim</a></dd>
-  <dd>Org Editor: <a  href="https:github.com/hlissner/doom-emacs">Doom Emacs</a></dd>
+  <dd>Org Editor: <a  href="https://github.com/hlissner/doom-emacs">Doom Emacs</a></dd>
   <dd>Browser: Brave</dd>
-  <dd>Theme Setter: <a href="https://github.com/deviantfora/wpgtk">wpgtk</a></dd>
+  <dd>Theme Setter: <a href="https://github.com/deviantfero/wpgtk">wpgtk</a></dd>
   <dd>Video Player: vlc</dd>
   <dd>Image Viewer: <a href="https://github.com/DrabWeb/macfeh">feh</a><dd>
 </dl>
